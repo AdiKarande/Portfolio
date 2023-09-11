@@ -45,17 +45,17 @@ const ArticlesPost = ({
 
   return (
     <article
-      className={styles.post}
+      // className={styles.post}
       data-featured={!!featured}
       style={index !== undefined ? cssProps({ delay: index * 100 + 200 }) : undefined}
     >
      
       {featured && !!banner && (
-        <div className={styles.postImage}>
+        <div >
           <Barcode/>
         </div>
       )}
-      <RouterLink href={`/articles/${slug}`} scroll={false}>
+      <RouterLink href={`https://drive.google.com/file/d/16O-SHjPrZxKWo3FjH7uFwwj7IlDMdX29/view?usp=drivesdk`} scroll={false}>
         <a
           className={styles.postLink}
           onMouseEnter={handleMouseEnter}
@@ -69,11 +69,13 @@ const ArticlesPost = ({
             <Heading as="h2" level={featured ? 2 : 4}>
               {title}
             </Heading>
+            Click here
             <Text size={featured ? 'l' : 's'} as="p">
               {abstract}
+      
             </Text>
             <div className={styles.postFooter}>
-              
+             
             </div>
           </div>
         </a>
@@ -124,7 +126,7 @@ export const Articles = ({ posts, featured }) => {
 
   const postsHeader = (
     <header className={styles.header}>
-      {/* <Heading className={styles.heading} level={5} as="h1">
+      {/* <Heading className={styles.heading} level={1} as="h1">
         <DecoderText text="Resume" />
       </Heading> */}
       <Barcode />
@@ -157,12 +159,12 @@ export const Articles = ({ posts, featured }) => {
         {!isSingleColumn && (
           <div className={styles.grid}>
             {/* {postList} */}
-            {featuredPost}
+            {/* {featuredPost} */}
           </div>
         )}
         {isSingleColumn && (
           <div className={styles.grid}>
-            {postsHeader}
+            {/* {postsHeader} */}
             {featuredPost}
             {/* {postList} */}
           </div>
