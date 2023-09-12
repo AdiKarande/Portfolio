@@ -70,14 +70,14 @@ import styles from './SmartSparrow.module.css';
 const Earth = dynamic(() => import('./Earth').then(mod => mod.Earth));
 const EarthSection = dynamic(() => import('./Earth').then(mod => mod.EarthSection));
 
-const title = 'Designing the future of education';
+const title = 'Designing a platform for a Ayurvedic Venture';
 const description =
-  'I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
+  'I worked as the design lead on a major iteration of Ayuvi Website. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
 const roles = [
+  'Wire Framing',
   'Art Direction',
   'UX and UI Design',
   'Front End Development',
-  'Motion Design',
 ];
 
 export const SmartSparrow = () => {
@@ -104,7 +104,7 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.smartsparrow.com/"
+          url="https://www.figma.com/proto/w9zQ9yTKg1h4E6vNN2l4Zk/Portfolio?type=design&node-id=1-5&t=B8LoVT37mXfL31uz-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=8%3A3972&mode=design"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -131,19 +131,20 @@ export const SmartSparrow = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
+              "An Ayurvedic organization specializing in holistic health and wellness
+              seeks to enhance its onlinepresence and provide accessible consultation
+              services to customers seeking healthier lifestyles. The organization is in
+              need of a user-friendly introductory website that effectively communicates
+              its unique approach to Ayurveda, offers comprehensive information about its
+              services, and facilitates seamless online consultations for clients,
+              ultimately bridging the gap between ancient Ayurvedic wisdom and modern
+              health-conscious individuals."
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
-        <ProjectSection light={isDark}>
-          <ProjectSectionContent>
-            <Image
+        {/* <ProjectSection light={isDark}> */}
+        {/* <ProjectSectionContent> */}
+        {/* <Image
               key={themeId}
               srcSet={
                 isDark
@@ -157,17 +158,17 @@ export const SmartSparrow = () => {
               }
               alt={`A set of ${themeId} themed components for the aero design system`}
               sizes="100vw"
-            />
-            <ProjectTextRow>
-              <SegmentedControl
+            /> */}
+        {/* <ProjectTextRow> */}
+        {/* <SegmentedControl
                 currentIndex={themes.indexOf(themeId)}
                 onChange={handleThemeChange}
               >
                 <SegmentedControlOption>Dark theme</SegmentedControlOption>
                 <SegmentedControlOption>Light theme</SegmentedControlOption>
-              </SegmentedControl>
-            </ProjectTextRow>
-            <ProjectTextRow>
+              </SegmentedControl> */}
+        {/* </ProjectTextRow> */}
+        {/* <ProjectTextRow>
               <ProjectSectionHeading>The aero design system</ProjectSectionHeading>
               <ProjectSectionText>
                 To streamline the design process across designers and engineers for such a
@@ -504,18 +505,16 @@ export const SmartSparrow = () => {
               meshes={['Atmosphere', 'EarthFull']}
             />
           </Earth>
-        </ThemeProvider>
+        </ThemeProvider> */}
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow center centerMobile noMargin>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Ultimately the project was successful after Smart Sparrow and the aero
-                platform were{' '}
-                <Link href="https://www.figma.com/proto/w9zQ9yTKg1h4E6vNN2l4Zk/Portfolio?type=design&node-id=1-5&t=b2oThekheA0Ru96k-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=8%3A3972">
-                  acquired by Pearson in 2020
+                Ultimately the project was successful.
+                <Link href="https://www.figma.com/proto/w9zQ9yTKg1h4E6vNN2l4Zk/Portfolio?type=design&node-id=1-5&t=B8LoVT37mXfL31uz-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=8%3A3972&mode=design">
+                  <br /> Ayuvi
                 </Link>{' '}
-                to become a foundation for their next generation learning platform.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>

@@ -40,9 +40,9 @@ import { Fragment } from 'react';
 import { media } from 'utils/style';
 import styles from './Slice.module.css';
 
-const title = 'Biomedical image collaboration';
+const title = 'Grand Trips Landing Page';
 const description =
-  'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
+  'This project involved designing a better way for Planning Trips that is Budget friendly.';
 const roles = ['User Research', 'UX Design', 'Interface Design'];
 
 export const Slice = () => {
@@ -59,7 +59,7 @@ export const Slice = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.best.edu.au/s/q2yjjvl7?data=8%404!9%4020303!10%40-15087&version=1"
+          url="https://www.figma.com/proto/f46sBLK4FPE4DXZ0lxrRl9/Grand-Trips-Website?type=design&node-id=1-2&t=jAeT7z1GBV4cSeBn-1&scaling=min-zoom&page-id=0%3A1&mode=design"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -72,7 +72,7 @@ export const Slice = () => {
             />
           </ProjectSectionContent>
         </ProjectSection>
-        <ProjectSection>
+        {/* <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
               <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
@@ -177,7 +177,7 @@ export const Slice = () => {
               alt="Students at the University of New South Wales using the new collaborative annotation features"
             />
           </ProjectSectionContent>
-        </ProjectSection>
+        </ProjectSection> */}
       </ProjectContainer>
       <Footer />
     </Fragment>

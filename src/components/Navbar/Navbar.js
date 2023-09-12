@@ -1,5 +1,6 @@
 import { Icon } from 'components/Icon';
 import { Monogram } from 'components/Monogram';
+import { logo } from '../../assets/arrow-down.svg';
 import { useTheme } from 'components/ThemeProvider';
 import { tokens } from 'components/ThemeProvider/theme';
 import { Transition } from 'components/Transition';
@@ -149,6 +150,7 @@ export const Navbar = () => {
           onClick={handleMobileNavClick}
         >
           <Monogram highlight />
+          {/* <img src={logo} /> */}
         </a>
       </RouterLink>
       <NavToggle onClick={() => dispatch({ type: 'toggleMenu' })} menuOpen={menuOpen} />

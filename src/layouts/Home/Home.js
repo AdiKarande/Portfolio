@@ -112,8 +112,8 @@ export const Home = () => {
         index={2}
         title="Mobile Application Designing"
         description="Design and development for a video game tracking app built in React Native"
-        buttonText="View Prototype"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonText="Need Persmison to view"
+        // buttonLink="https://gamestack.hamishw.com"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -135,7 +135,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="Grand Trips Landing Page"
-        description="To Provide briff information about trips plans"
+        description="To Provide brief information about trips plans"
         buttonText="View project"
         buttonLink="/projects/slice"
         model={{
