@@ -55,7 +55,7 @@ const ArticlesPost = ({
           <Barcode/>
         </div>
       )}
-      <RouterLink href={`https://drive.google.com/file/d/16O-SHjPrZxKWo3FjH7uFwwj7IlDMdX29/view?usp=drivesdk`} scroll={false}>
+      <RouterLink href={`https://drive.google.com/file/d/1LroCpDi61zLd_q3ISwsBHnQmhWBLEG-a/view?usp=share_link`} scroll={false}>
         <a
           className={styles.postLink}
           onMouseEnter={handleMouseEnter}
