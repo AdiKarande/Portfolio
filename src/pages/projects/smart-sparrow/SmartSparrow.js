@@ -131,14 +131,14 @@ export const SmartSparrow = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
-              "An Ayurvedic organization specializing in holistic health and wellness
+              An Ayurvedic organization specializing in holistic health and wellness
               seeks to enhance its onlinepresence and provide accessible consultation
               services to customers seeking healthier lifestyles. The organization is in
               need of a user-friendly introductory website that effectively communicates
               its unique approach to Ayurveda, offers comprehensive information about its
               services, and facilitates seamless online consultations for clients,
               ultimately bridging the gap between ancient Ayurvedic wisdom and modern
-              health-conscious individuals."
+              health-conscious individuals.
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
