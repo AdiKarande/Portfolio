@@ -4,6 +4,8 @@ import gamestackTexture2 from 'assets/gamestack-list.jpg';
 import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from 'assets/gamestack-login.jpg';
+import su from 'assets/sumobile.jpg';
+import su2 from 'assets/sumobile2.png';
 import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceTexture from 'assets/slice-app.jpg';
@@ -111,24 +113,25 @@ export const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         title="Mobile Application Designing"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="Need Persmison to view"
-        // buttonLink="https://gamestack.hamishw.com"
+        description="Design and development for a In Store app built in React"
+        buttonText="View Prototype"
+        buttonLink="https://www.figma.com/proto/5iF9NdPfPnuFrQg93DHvO9/Style-Union-Mobile-App?page-id=0%3A1&type=design&node-id=51-3151&viewport=357%2C-209%2C0.35&t=xoal4d7Mks5Nn0ly-1&scaling=min-zoom&starting-point-node-id=51%3A3151&mode=design"
         model={{
           type: 'phone',
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
+              srcSet: [su2],
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
+              srcSet: [su],
               placeholder: gamestackTexture2Placeholder,
             },
           ],
         }}
       />
+      
       <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
@@ -145,6 +148,31 @@ export const Home = () => {
             {
               srcSet: [sliceTexture, sliceTextureLarge],
               placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-2"
+        alternate
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={4}
+        title="Mobile Application Designing"
+        description="Design and development for a Sales tracking app built in React"
+        buttonText="Need Persmison to view"
+        // buttonLink="https://gamestack.hamishw.com"
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [gamestackTexture, gamestackTextureLarge],
+              placeholder: gamestackTexturePlaceholder,
+            },
+            {
+              srcSet: [gamestackTexture2, gamestackTexture2Large],
+              placeholder: gamestackTexture2Placeholder,
             },
           ],
         }}
