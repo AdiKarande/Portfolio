@@ -113,25 +113,24 @@ export const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         title="Mobile Application Designing"
-        description="Design and development for a In Store app built in React"
-        buttonText="View Prototype"
-        buttonLink="https://www.figma.com/proto/5iF9NdPfPnuFrQg93DHvO9/Style-Union-Mobile-App?page-id=0%3A1&type=design&node-id=51-3151&viewport=357%2C-209%2C0.35&t=xoal4d7Mks5Nn0ly-1&scaling=min-zoom&starting-point-node-id=51%3A3151&mode=design"
+        description="Design and development for a Sales tracking app built in React"
+        buttonText="Need Persmison to view"
+        // buttonLink="https://gamestack.hamishw.com"
         model={{
           type: 'phone',
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [su2],
+              srcSet: [gamestackTexture, gamestackTextureLarge],
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [su],
+              srcSet: [gamestackTexture2, gamestackTexture2Large],
               placeholder: gamestackTexture2Placeholder,
             },
           ],
         }}
       />
-      
       <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
@@ -153,25 +152,25 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-2"
+        id="project-4"
         alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={4}
         title="Mobile Application Designing"
-        description="Design and development for a Sales tracking app built in React"
-        buttonText="Need Persmison to view"
-        // buttonLink="https://gamestack.hamishw.com"
+        description="Design and development for a In Store app built in React"
+        buttonText="View Prototype"
+        buttonLink="https://www.figma.com/proto/5iF9NdPfPnuFrQg93DHvO9/Style-Union-Mobile-App?page-id=0%3A1&type=design&node-id=51-3151&viewport=357%2C-209%2C0.35&t=xoal4d7Mks5Nn0ly-1&scaling=min-zoom&starting-point-node-id=51%3A3151&mode=design"
         model={{
           type: 'phone',
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
+              srcSet: [su2],
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
+              srcSet: [su],
               placeholder: gamestackTexture2Placeholder,
             },
           ],
